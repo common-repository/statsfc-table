@@ -1,0 +1,110 @@
+div.sfc_table table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid silver;
+}
+
+div.sfc_table table thead th {
+    text-transform: uppercase;
+    font-size: small;
+    background-color: silver;
+}
+
+div.sfc_table table tr.sfc_separator td {
+    border-top: 2px solid grey;
+}
+
+div.sfc_table table tr.sfc_highlight td {
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+div.sfc_table table tr th,
+div.sfc_table table tr td {
+    text-align: left;
+    padding: 2px 5px;
+    border-bottom: 1px solid silver;
+    vertical-align: middle;
+}
+
+div.sfc_table table tr th.sfc_numeric,
+div.sfc_table table tr td.sfc_numeric {
+    text-align: right;
+}
+
+div.sfc_table i.sfc_movement {
+    display: block;
+    vertical-align: middle;
+    width: 10px;
+    height: 0;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: silver;
+    border-width: 1px 0;
+}
+
+div.sfc_table i.sfc_movement_up {
+    border: 5px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #22AA22;
+}
+
+div.sfc_table i.sfc_movement_down {
+    border: 5px solid transparent;
+    border-bottom-width: 0;
+    border-top-color: #FF3333
+}
+
+
+div.sfc_table table tr th.sfc_form,
+div.sfc_table table tr td.sfc_form {
+    white-space: nowrap;
+}
+
+div.sfc_table table tr td.sfc_team {
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 20px 20px;
+    line-height: 25px;
+    padding-left: 25px !important;
+}
+
+div.sfc_table table tr th span.sfc_form,
+div.sfc_table table tr td span.sfc_form {
+    display: inline-block;
+    width: 10px;
+    margin: 0 1px;
+    border-radius: 2px;
+}
+
+div.sfc_table table tr th span.sfc_W,
+div.sfc_table table tr td span.sfc_W {
+    background: #22AA22;
+}
+
+div.sfc_table table tr th span.sfc_D,
+div.sfc_table table tr td span.sfc_D {
+    background: orange;
+}
+
+div.sfc_table table tr th span.sfc_L,
+div.sfc_table table tr td span.sfc_L {
+    background: #FF3333;
+}
+
+div.sfc_table div.sfc_footer {
+    display: block !important;
+    opacity: 1 !important;
+    text-align: right;
+    visibility: visible !important;
+}
+
+@media screen and (max-width: 767px) {
+    div.sfc_table {
+        width: 100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+}
